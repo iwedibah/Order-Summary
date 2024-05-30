@@ -1,0 +1,136 @@
+/* .red-hat-display-<uniquifier> {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+  
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 568px){
+    body {
+    background-image: url(pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: #E0E8FF;
+  }
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: hsl(225, 100%, 98%);
+    width: 30%;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;;
+    text-align: center;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+h2{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    margin-top: 20px;
+}
+p{
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin: 0 30px;
+}
+main>img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.plan{
+    background-color: #eef0fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+.plan a{
+    margin-left: 15px;
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+.price{
+    margin-top: -8px;
+}
+h3{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+    font-size: 1em;
+}
+.price p{
+    margin-top: -18px;
+    padding-bottom: 5px;
+    text-align: left;
+    /* margin-left: 1px;     */
+}
+.payment a{
+    display: block;
+    text-decoration: none;
+}
+.payment{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.payment a:first-child{
+    background-color: #392AE1;
+    color: hsl(225, 100%, 98%);
+    font-weight: 500;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: 15px 50px;
+    box-shadow: 8px 10px 5px #392ae136;
+    transition: all 220ms ease-in-out;
+}
+.payment a:first-child:hover{
+    background-color: #766CF1;
+}
+.payment a:last-child{
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    padding: 10px;
+}
+.payment a:last-child:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media screen and (max-width: 568px){
+    body{
+        background-image: url(pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        width: 65%;
+    }
+    p{
+        margin: 0 20px;
+    }
+    .plan{
+        margin: 20px 10px;
+        padding: 10px 20px;
+    }
+    .payment a:first-child{    margin: 15px 10px;
+    }
+}
